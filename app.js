@@ -77,6 +77,7 @@ b) Calculate the sum of the squared elements
 c) Return the average of the sum of the squared elements
 Print the result.
 
+
 6) Write an arrow function where it will do the following:
 a) It will take two array inputs
 b) Combine the two arrays and assign them in a new array
@@ -113,3 +114,53 @@ What are you thinking? Yeah! Do it with for loop. I know you can do it.
 But! Wait !! Wait !!! Do the same task using array.reduce() method.
 
 */
+
+/* ......................... solved problem.............................. */
+/*1) Write an arrow function that will take 3 parameters, will multiply
+ the parameters and will return the result. */
+
+const multiplication = (a, b, c) => a * b * c;
+console.log(multiplication(2, 4, 6)); // 48
+
+/* 2) Write the following sentence in three lines and print the result:
+I am a web developer. I love to code. I love to eat biryani. */
+
+const developer = `
+I am a web developer.
+ I love to code.
+I love to eat biryani.
+`;
+console.log(developer); //  done..
+
+/* 3) Write an arrow function that will take 2 parameters: One parameter
+will come from you and the other parameter will be a default
+parameter. Add these two parameters and return the result. */
+
+const add = (num1, num2 = 5) => num1 + num2;
+console.log(add(5)); //10
+
+/* 4) Write an arrow function where it will do the following:
+a) It will take an array where the array elements will be the
+name of your friends
+b) Check if the length of each element is even, push elements
+with even length to a new array and return the result
+Print the result. */
+
+const friends = ['sabbir', 'nadim', 'monir', 'badon', 'hy'];
+const fevFriends = (friends) => {
+    const evenLengthNameFriends = [];
+    for (let i = 0; i < friends.length; i++){
+        if (friends[i].length % 2 === 0); {
+            evenLengthNameFriends.push(friends[i]);
+        }
+    }
+    return evenLengthNameFriends;
+}
+console.log(fevFriends(friends));
+
+
+/* 5) Write an arrow function where it will do the following:
+a) Square each array element
+b) Calculate the sum of the squared elements
+c) Return the average of the sum of the squared elements
+Print the result. */
